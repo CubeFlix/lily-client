@@ -86,6 +86,10 @@ export class Client {
                     resolve({code: respCode, str: respStr, data: BSON.deserialize(data)});
                 });
             });
+            client.on('error', function(ex) {
+                    reject(ex);
+                    return;
+                });
         });
     }
 
@@ -166,6 +170,10 @@ export class Client {
                     }
                     resolve({code: respCode, str: respStr, data: BSON.deserialize(data), content: content});
                 });
+            });
+            client.on('error', function(ex) {
+                reject(ex);
+                return;
             });
         });
     }
@@ -260,6 +268,10 @@ export class Client {
                     }
                     resolve({code: respCode, str: respStr, data: BSON.deserialize(data)});
                 });
+            });
+            client.on('error', function(ex) {
+                reject(ex);
+                return;
             });
         });
     }
