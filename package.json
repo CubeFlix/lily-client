@@ -15,6 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "bson": "^4.7.0",
+    "tls": "^0.0.1",
     "uuid-buffer": "^1.0.3"
   }
 }
