@@ -1,6 +1,6 @@
 {
   "name": "lily-client",
-  "version": "1.0.5",
+  "version": "1.0.4",
   "description": "Lily JavaScript Client API",
   "type": "module",
   "main": "lily.js",
@@ -15,7 +15,6 @@
   "license": "ISC",
   "dependencies": {
     "bson": "^4.7.0",
-    "tls": "^0.0.1",
     "uuid-buffer": "^1.0.3"
   }
 }
